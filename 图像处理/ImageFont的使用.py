@@ -1,0 +1,10 @@
+from PIL import ImageFont, ImageDraw, Image
+img = Image.open('picture\cup.jpg')
+pen = ImageDraw.Draw(img)
+img_font = ImageFont.load_default()
+pen.text((20, 10), 'ceshi', font=img_font, fill='white')
+img_font = ImageFont.truetype('SIMYOU.TTF', 50)
+pen.text((20, 80), '测试', font=img_font, fill='red')
+img_font = ImageFont.truetype('SIMYOU.TTF',50)
+pen.text((20, 150), '测试', font=img_font, fill='blue')
+img.show()

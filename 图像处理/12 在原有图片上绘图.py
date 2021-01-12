@@ -1,0 +1,10 @@
+from PIL import Image,ImageDraw
+img = Image.open('picture\cup.jpg')
+pen = ImageDraw.Draw(img)
+pen.arc((0,0,img.width-1,img.height-1),0,360,fill='blue',width=10)
+img.show()
+pen.line()
+pen.arc()
+pen.ellipse()
+pen.chord()
+pen.pieslice()
